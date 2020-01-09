@@ -7,6 +7,8 @@ Any standard C compiler will do. E.g.:
 
     gcc -O2 -Wall -o srpg srpg.c
 
+This is also basically what the Makefile does, so you could also just run `make`.
+
 Usage:
 
     srgp --Nx <X> --Ny <Y> --output <OUTPUTFILE>
