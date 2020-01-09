@@ -1,20 +1,24 @@
-The code srpg generates (simply-connected and multiply-connected polygons by
+The code srpg generates simply-connected and multiply-connected polygons by
 means of a regular grid (with quadratic cells).
 
-Compilation: 
-Any standard C compiler will do. E.g.: 
+# Compilation
+
+Any standard C compiler will do. E.g.:
+
     gcc -O2 -Wall -o srpg srpg.c
 
 Usage:
-    srgp --Nx X --Ny Y --output XYZ 
-         [--percent P] [--seed S] [--holes]
-         [[--aligned] | [--perturb [--smooth M]]
-         [--hierarchy N] [--diagonal]
-    where X,Y,M,N are positive integers,
-          S is a non-negative integer, and
-          0.001<P<0.5 is a real.
 
-Generating polygonal data: 
+    srgp --Nx <X> --Ny <Y> --output <OUTPUTFILE>
+         [--percent <P>] [--seed <S>] [--holes]
+         [--aligned | --perturb [--smooth <M>]]
+         [--hierarchy <N>] [--diagonal]
+
+where X,Y,M,N are positive integers, S is a non-negative integer,
+0.001 < P < 0.5 is a real, and OUTPUTFILE is the name of the output file.
+
+# Generating polygonal data
+
 The computation is based on a grid with X times Y quadratic cells. The user
 has to specify X and Y. In addition, the user has to specify the name of an
 output file. If no other options are specified, then srpg generates a polygon
