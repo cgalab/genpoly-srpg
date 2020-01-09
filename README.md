@@ -45,3 +45,8 @@ generating a polygon which resembles a polygonal approximation of a smooth
 free-form curve. (Again, M will be a small positive integer.)
 
 Please direct bug reports or suggestions to Martin Held at held@cs.sbg.ac.at.
+
+# License
+
+This is free software.  You may redistribute it and/or modify
+it under the terms of the GNU General Public License (v3).
